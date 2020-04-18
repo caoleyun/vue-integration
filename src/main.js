@@ -1,10 +1,16 @@
 import Vue from 'vue';
 import App from './App.vue';
 
+import {Button,Select} from 'element-ui';
+
+
 import store from "./vuex/store.js";
 
 import VueRouter from "vue-router";
 import routes from "./router/routes.config.js";
+
+ Vue.use(Button)
+ Vue.use(Select)
 
 Vue.use(VueRouter);
 

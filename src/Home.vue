@@ -1,20 +1,18 @@
 <template>
   <div id="app2">
-        home组件
-        <button @click="add">+</button>
-        <p>{{count}}</p>
-        <button @click="minus">-</button>
+        <!-- 主页-->主页
+       <el-button>默认按钮</el-button>
+       <el-button type="warning">警告按钮</el-button>
 
-        <p><button v-on:click="addnumber">加文件中的数字</button></p>
+        <!-- <p><button v-on:click="addnumber">加文件中的数字</button></p>
         <p><router-link  :to="{name:'home'}">home</router-link></p>
         <p><router-link  :to="{name:'helloWorld'}">helloWorld</router-link></p>
-        <router-view></router-view>
+        <router-view></router-view> -->
       
   </div>
 </template>
 
 <script>
-    //import HelloWorld from './components/HelloWorld.vue';
 
 
     export default {
@@ -23,20 +21,10 @@
 
       },
       computed:{
-        count(){
-          return this.$store.state.count;
-        }
+        
       },
       methods:{
-        add(){
-          this.$store.commit("add");
-        },
-        minus(){
-          this.$store.commit("minus");
-        },
-        addnumber(){
-            this.$store.dispatch("addnumber");
-        }
+        
       }
     }
 </script>
